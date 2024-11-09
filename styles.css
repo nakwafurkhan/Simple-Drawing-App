@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.drawing-board {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background-color: #202020;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#toolbar h1 {
+    font-size: 1.2em;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#toolbar label, #toolbar input, #toolbar button {
+    font-size: 0.9em;
+    margin: 0 5px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
